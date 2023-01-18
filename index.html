@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <div id="Top">
+      <main>
+        <!-- Result-Section -->
+        <div class="container">
+          <div class="header">
+            <h1>ROCK</h1>
+            <h1>PAPER</h1>
+            <h1>SCISSORS</h1>
+          </div>
+          <div class="score-container">
+            <h5>SCORE</h5>
+            <h3 class="score">0</h3>
+          </div>
+        </div>
+
+        <!-- Play-Game -->
+        <div class="RPS">
+          <button class="circle btn-paper pick" data-choice="paper">
+            <span class="wrapper">
+              <img src="./images/icon-paper.svg" alt="" />
+            </span>
+          </button>
+          <button class="circle btn-rock pick" data-choice="rock">
+            <span class="wrapper">
+              <img src="./images/icon-rock.svg" alt="" />
+            </span>
+          </button>
+          <button class="circle btn-scissors pick" data-choice="scissors">
+            <span class="wrapper">
+              <img src="./images/icon-scissors.svg" alt="" />
+            </span>
+          </button>
+        </div>
+      </main>
+
+      <div class="selection">
+        <div class="picked">
+          <h1>YOU PICKED</h1>
+          <button class="circle btn-paper user_choice" data-choice="paper">
+            <div class="wrapper">
+              <img src="./images/icon-paper.svg" alt="" />
+            </div>
+          </button>
+        </div>
+        <div class="reset-game">
+          <p>YOU <span class="winner"></span></p>
+          <button class="reset">PLAY AGAIN</button>
+        </div>
+        <div class="house-picked">
+          <h1>COMPUTER</h1>
+          <button
+            class="circle btn-scissors computer_picked"
+            data-choice="scissors"
+          >
+            <div class="wrapper">
+              <img src="./images/icon-scissors.svg" alt="" />
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Rules-button -->
+      <div class="rules-img">
+        <img
+          class="image-rules"
+          src="./images/image-rules.svg"
+          alt="rules-img"
+        />
+        <br />
+        <img class="close" src="./images/icon-close.svg" alt="" />
+      </div>
+      <div class="btn-rules">
+        <button class="rules">RULES</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

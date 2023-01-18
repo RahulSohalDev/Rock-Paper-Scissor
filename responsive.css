@@ -1,0 +1,130 @@
+@media screen and (max-width: 750px) {
+  .picked {
+    margin: 20px;
+  }
+  .selection h1 {
+    margin-bottom: 46px;
+    font-size: 22px;
+  }
+  .selection {
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  .reset-game {
+    margin: 20px;
+    margin-top: 40px;
+  }
+  .house-picked {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 476px) {
+  main {
+    width: 90%;
+  }
+  .image-rules {
+    width: 200px;
+    margin-top: 6pc;
+  }
+  .close {
+    margin-top: 40px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .btn-rules {
+    position: static;
+    width: 100px;
+    margin: 40px auto;
+  }
+  .rules {
+    padding: 5px 23px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    width: 90%;
+    margin-top: 0px;
+  }
+  .container {
+    padding: 10px 13px;
+  }
+  .circle {
+    width: 135px;
+    height: 135px;
+  }
+
+  .pick {
+    margin-bottom: 10px;
+  }
+  .wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .circle img {
+    height: 40px;
+    width: 40px;
+  }
+  .RPS {
+    width: 200px;
+
+    margin: 20px auto;
+  }
+  .score {
+    font-size: 30px;
+  }
+  .score-container h5 {
+    font-size: 13px;
+  }
+  .score-container {
+    padding: 7px 20px;
+  }
+  .header h1 {
+    font-size: 22px;
+  }
+  .selection {
+    display: none;
+    flex-direction: column;
+    width: 219px;
+    margin-top: 0px;
+  }
+  .selection h1 {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .selection .circle {
+    transform: scale(1);
+  }
+  .selection p {
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 33px;
+  }
+  .reset {
+    padding: 8px 20px;
+
+    margin-bottom: 15px;
+    margin-top: 8px;
+  }
+  .btn-rules {
+    width: 100px;
+    margin: 20px auto;
+    position: static;
+  }
+  .house-picked {
+    margin: 13px;
+  }
+  .picked {
+    margin: 0px;
+  }
+  .reset-game {
+    margin: 0px;
+    margin-top: 13px;
+  }
+}
