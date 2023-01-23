@@ -8,7 +8,7 @@
 body {
   font-family: "Balsamiq Sans", cursive;
   font-family: "Barlow Semi Condensed", sans-serif;
-  height: 143vh;
+  height: 100vh;
   background: radial-gradient(
     circle at 50% 0%,
     hsl(214, 47%, 23%),
