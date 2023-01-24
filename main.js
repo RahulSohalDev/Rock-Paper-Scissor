@@ -11,6 +11,7 @@ const user = document.querySelector(".user_choice");
 const computer = document.querySelector(".computer_picked");
 const winner = document.querySelector(".winner");
 const reset_btn = document.querySelector(".reset-score");
+const storage = scoreEl;
 
 reset_btn.addEventListener("click", () => {
   score = 0;
@@ -27,6 +28,10 @@ let score = 0;
 function updateScore(value) {
   score += value;
   scoreEl.innerText = score;
+  localStorage.setItem(scoreEl, score);
+}
+if (scoreEl.innerText == 0) {
+  scoreEl.innerHTML = localStorage.getItem(scoreEl, score);
 }
 
 // UserChoice
@@ -85,3 +90,5 @@ button.addEventListener("click", (e) => {
 closeBtn.addEventListener("click", (e) => {
   rulesimg.classList.remove("open");
 });
+
+// localStorage.setItem(scoreEl, scoreEl);
