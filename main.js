@@ -10,6 +10,12 @@ const reset = document.querySelector(".reset");
 const user = document.querySelector(".user_choice");
 const computer = document.querySelector(".computer_picked");
 const winner = document.querySelector(".winner");
+const reset_btn = document.querySelector(".reset-score");
+
+reset_btn.addEventListener("click", () => {
+  score = 0;
+  scoreEl.innerHTML = score;
+});
 
 reset.addEventListener("click", () => {
   RPS.style.display = "flex";

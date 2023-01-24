@@ -72,7 +72,12 @@
   .btn-rules {
     position: static;
     width: fit-content;
-    margin: auto;
+    margin-right: 12px;
     margin-top: 51px;
+  }
+  .reset-btn {
+    margin-top: 51px;
+    position: static;
+    margin-left: 12px;
   }
 }

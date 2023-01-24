@@ -193,3 +193,24 @@ main {
 .selection h1 {
   margin-bottom: 60px;
 }
+#btns {
+  display: flex;
+  justify-content: space-between;
+}
+.reset-btn {
+  border: 2px solid;
+  border-radius: 5px;
+  position: fixed;
+  top: 550px;
+
+  left: 40px;
+}
+.reset-score {
+  background-color: transparent;
+  border: 2px px solid white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 1px;
+}
