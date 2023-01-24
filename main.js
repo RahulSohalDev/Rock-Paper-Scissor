@@ -11,11 +11,12 @@ const user = document.querySelector(".user_choice");
 const computer = document.querySelector(".computer_picked");
 const winner = document.querySelector(".winner");
 const reset_btn = document.querySelector(".reset-score");
-const storage = scoreEl;
+// const storage = scoreEl;
 
 reset_btn.addEventListener("click", () => {
   score = 0;
   scoreEl.innerHTML = score;
+  localStorage.clear(scoreEl, score);
 });
 
 reset.addEventListener("click", () => {
@@ -30,7 +31,9 @@ function updateScore(value) {
   scoreEl.innerText = score;
   localStorage.setItem(scoreEl, score);
 }
-if (scoreEl.innerText == 0) {
+if (localStorage.getItem(scoreEl, score) == undefined) {
+  scoreEl.innerText = 0;
+} else {
   scoreEl.innerHTML = localStorage.getItem(scoreEl, score);
 }
 
