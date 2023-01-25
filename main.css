@@ -74,12 +74,15 @@ main {
 
 .btn-paper {
   background: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: 0px 5px 0px hsl(230deg 89% 62% / 68%);
 }
 .btn-scissors {
   background: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: 0px 5px 0px hsl(39deg 89% 49% / 68%);
 }
 .btn-rock {
   background: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: 0px 5px 0px hsl(349deg 70% 56% / 68%);
 }
 .circle img {
   height: 50px;
@@ -92,7 +95,7 @@ main {
   height: 110px;
   margin: auto;
   border-radius: 50%;
-  /* display: unset; */
+  box-shadow: inset 0px 5px 4px #ebe5e5;
   display: inline-flex;
 }
 
