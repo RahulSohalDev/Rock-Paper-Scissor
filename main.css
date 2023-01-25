@@ -67,10 +67,17 @@ main {
 /* .pick:focus {
   outline: none;
 } */
-/* .RPS::after {
-  background: url("./images/bg-triangle.svg");
+.RPS::before {
+  background: url(./images/bg-triangle.svg);
   content: "";
-} */
+  width: 90%;
+  position: absolute;
+  top: 11%;
+  z-index: -149;
+  left: 5%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
 
 .btn-paper {
   background: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
@@ -102,6 +109,7 @@ main {
 .RPS {
   display: flex;
   width: 350px;
+  position: relative;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 40px auto;
